@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>SIGNUP</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body style="font-family: cooperblack;">
+    <form class="Signup_box" action="register.php" method="post">
+        <div class="navbar">
+            <a  class="active" href="register.html">REGISTER</a><br>   
+        </div>
+        <input type="text" placeholder="First Name" name="Firstname" required>   <input type="text" placeholder="Last Name" name="Lastname"><br>
+        <i class="fa fa-envelope icon" style="font-size: 40px"></i>
+        <input type="email" placeholder="Email" name="Email" required><br>
+        <i class="fa fa-calendar icon" style="font-size: 40px"></i>
+        <h2 style="color: ivory;";>Date of Birth</h2>
+        <input type="date" placeholder="Date of Birth"name="Dob" required><br>
+        <!--<i class="fa fa-user icon" style="font-size: 40px"></i>
+        <input type="email" placeholder="Username" name="Username" title="Username must contain the '@' character" required><br>
+        <i class="fa fa-lock icon" style="font-size: 40px"></i>
+        <input type="password"  placeholder="Password" id="Password" name="Password" pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&;*()_+}{;?/.]).*$" title="Enter the password minimum of 8 length that must contain atleast an Number UPPERCASE,Lowercase & a Special character." required><br>
+        <input   type="password"  placeholder="Confirm_Password" id="Confirm_Password" minlength="8" required><br>-->
+        <i class="fa fa-child icon" style="font-size: 40px"></i>
+        <h2 style="color: ivory;";>Gender</h2>
+        <input type="radio" name="Gender" value="male" required> Male
+        <input type="radio" name="Gender" value="female" required> Female
+        <input type="radio" name="Gender" value="other" required> Other<br>
+        <i class="fa fa-mobile icon" style="font-size: 70px"></i>
+        <br><input type="tel"  placeholder="Mobile Number" name="Mobilenumber" minlength="10" maxlength="10" title="Enter 10 Digit phone Number." required><br>
+        <label for="event">Event</label>
+            <select id="event" name="event">
+                <option value="hackathon">HACKATHON</option>
+                <option value="workshop">WORKSHOP</option>
+                <option value="codeflix">CODE FLIX</option>
+                <option value="codeswap">CODE SWAP</option>
+                <option value="techrelay">TECH RELAY</option>
+                <option value="codecrack">CODE CRACK</option>
+            </select>
+            <br>
+        <input type="reset"><input type="submit">
+       <!---- <script>
+            var password = document.getElementById("Password"),confirm_password = document.getElementById("Confirm_Password");
+            function validatePassword()
+                {
+                if(password.value != confirm_password.value) 
+                    {
+                    confirm_password.setCustomValidity("Passwords Don't Match");
+                    } 
+                else 
+                    {
+                     confirm_password.setCustomValidity('');
+                    }
+                }           
+                password.onchange = validatePassword;
+                confirm_password.onkeyup = validatePassword;
+        </script>-->
+    </form>
+</body>
+</html>
